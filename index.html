@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#faf7f2"><title>好好吃饭 · 在线订餐</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="app">
+<header><a class="brand" href="./"><span class="logo">食</span><span>好好吃饭<small>一餐一饭，认真做好</small></span></a><div class="header-actions"><a class="order-link admin-entry" href="/admin">管理登录</a><button class="order-link" id="orders">我的订单 ↗</button></div></header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">GOOD FOOD, GOOD DAY</span><h1>今天，也要<br>好好吃饭<span>。</span></h1><p>选一份喜欢的，把这一餐安排好。</p><span class="hero-tag">热乎的饭 · 熟悉的味道</span></div><img src="2.jpg" alt="照烧鸡腿饭"><div class="hero-caption">今日菜单 <b>06</b> 款</div></section>
+<div class="notice"><span>☀</span> 好吃不用纠结，饭和心情都要刚刚好。</div>
+<section class="menu-head"><div><span class="eyebrow">TODAY'S MENU</span><h2>这一餐，吃什么？</h2></div><span id="resultCount">6 道可选</span></section>
+<div class="tools"><label class="search"><span>⌕</span><input id="search" placeholder="搜一搜想吃的菜" aria-label="搜索菜品"></label><nav aria-label="菜品分类"><button class="active" data-category="全部">全部</button><button data-category="米饭">米饭</button><button data-category="意面">意面</button></nav></div>
+<div id="menu" class="menu"></div><p class="footnote">每一餐，都值得被认真对待。<br><span>图片仅供参考，请以实际餐品为准</span></p>
+</main>
+<footer class="cartbar"><button id="cart" class="cart-icon" aria-label="查看已选菜品">▤<span id="badge" hidden>0</span></button><div class="cart-total"><strong id="total">¥0.00</strong><small id="quantity">还没选餐，挑一份喜欢的吧</small></div><button class="primary" id="checkout" disabled>去结算 <span>→</span></button></footer>
+</div>
+<dialog id="sheet"><div class="sheet-top"><h2 id="sheetTitle"></h2><button id="close" aria-label="关闭">×</button></div><div id="sheetBody"></div></dialog>
+<div id="toast" role="status"></div>
+<script src="app.js"></script></body></html>
